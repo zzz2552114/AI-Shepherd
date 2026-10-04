@@ -18,11 +18,10 @@ int main(int argc,char** argv){
     }
 
     if(!legacy){
-        printf("daemon 模式将在 Day5 启用\n");
+        printf("daemon 模式开发中\n");
         return 0;
     }
 
-    // 和 tsh 一样把 stderr 并到 stdout，方便 driver 抓全部输出
     dup2(1,2);
     shepherd::Processes jobs;
     shepherd::Lshell sh(jobs);
