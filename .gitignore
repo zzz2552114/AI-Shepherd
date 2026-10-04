@@ -1,0 +1,10 @@
+pdocs/
+
+*.exe
+*.sh
+
+__pycache__/
+
+.xmake
+.vscode
+build
