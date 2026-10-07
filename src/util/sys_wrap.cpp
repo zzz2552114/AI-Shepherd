@@ -106,5 +106,7 @@ namespace shepherd{
         }
         return st;
     }
-
+    int Pipe2(int flags){
+        
+    }
 }

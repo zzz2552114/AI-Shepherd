@@ -1,5 +1,6 @@
 # AI - Shepherd
 
+![show](assets/sh展示.png)
 AI-Shepherd（中文：AI-牧羊人）是一个面向 AI Agent 的进程监控系统。AI 负责决定执行什么命令，而全部进程的创建、登记、约束、超时治理与回收，由常驻的 C++ 监督核心 `shepherd-core` 统一负责。
 
 [![License](https://img.shields.io/github/license/zzz2552114/AI-Shepherd?label=License&color=blue&logo=apache&logoColor=white)](LICENSE)
@@ -58,15 +59,14 @@ AI-Shepherd（中文：AI-牧羊人）是一个面向 AI Agent 的进程监控�
 
 ---
 
-## 演示素材
+## 演示
 
-占位，过几天我补演示GIF
+![stack](assets/进程栈.png)
 
----
+![over](assets/进程结束.png)
 
 ## 项目架构
 
-> 下面的演示图和对比表格为我让 AI 生成的
 
 ```mermaid
 flowchart TB
@@ -174,20 +174,11 @@ export SHEPHERD_MODEL="deepseek-flash"
 ### 5. 启动终端 Shell
 
 ```bash
-ln -sf "$(pwd)/build/linux/x86_64/release/shepherd-core" "$(pwd)/shepherd-core"
-
-PYTHONPATH=python python3 -m shepherd.shell.app
+./shepherd
 ```
 
-启动成功后会显示如下信息：
 
-```
-Shepherd core     core pid 12345     socket /tmp/shepherd.sock
-输入自然语言任务，或使用 jobs / inspect / kill / logs / help / exit
-shepherd>
-```
 
----
 
 ## 使用指南
 
